@@ -95,7 +95,9 @@
     @media(max-width:800px){.nav-layout{display:block;padding-top:12px}.site-name{display:block;font-size:21px}.main-nav{overflow-x:auto;gap:18px;scrollbar-width:thin;margin-top:4px}.main-nav a{font-size:14px;padding:12px 1px}.hero-inner{display:flex;flex-direction:column-reverse;gap:0}.portrait-frame{align-self:stretch;min-height:320px;max-height:340px}.portrait-frame img{object-position:center 25%}.portrait-fallback{min-height:320px}.hero-text{padding:31px 0 38px}.hero-description{font-size:13.8px}.overview-grid{display:block}.overview-col,.overview-col:first-child,.overview-col:last-child,.overview-col:nth-child(2){padding:0;margin:0;border-right:0}.overview-col+.overview-col{margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}.stay-group{grid-template-columns:1fr}.contact-grid{justify-content:flex-start}.main-feature{padding-top:33px!important}}
     @media(max-width:500px){.container{width:calc(100% - 32px)}h1{font-size:35px}.hero-subtitle{font-size:18px}.section-heading h2{font-size:22px}.publication{grid-template-columns:63px 1fr;gap:13px}.journal-preview{width:63px;height:89px}}
     @media print{.site-header,.btn{display:none}.hero-inner{min-height:0}.hero-text{padding:20px 0}.portrait-frame{max-height:260px;min-height:260px}.overview-grid{display:grid;grid-template-columns:1fr 1fr 1fr}.overview-col{padding:0 15px}.print-only{display:block}}
-  </style>
+  
+.journal-preview img{object-fit:contain;object-position:center;background:#0c4774}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -130,9 +132,9 @@
 <div aria-label="Professional portrait area" class="portrait-frame">
 <div aria-hidden="true" class="portrait-fallback" id="portrait-fallback">
 <div class="portrait-monogram">ZJ</div>
-<span>Professional portrait<br/>Upload <b>assets/portrait.jpg</b></span>
+<span>Professional portrait<br/>Upload <b>assets/portrait.jpg.png</b></span>
 </div>
-<img alt="Zuzana Janková — professional portrait" onerror="this.remove()" onload="document.getElementById('portrait-fallback').style.display='none'" src="assets/portrait.jpg"/>
+<img alt="Zuzana Janková — professional portrait" onerror="this.remove()" onload="document.getElementById('portrait-fallback').style.display='none'" src="assets/portrait.jpg.png"/>
 </div>
 </div>
 </section>
@@ -142,7 +144,7 @@
 <div class="section-heading"><h2 id="pub-title">Selected Publications</h2><a class="tiny-link" href="https://www.vut.cz/en/people/zuzana-jankova-163485/publikacni-vysledky" rel="noopener noreferrer" target="_blank">Full publication list ↗</a></div>
 <div class="publication-list">
 <article class="publication">
-<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#ca7b36"><b>Finance<br/>Research<br/>Letters</b><em>2026</em><img alt="Cover or first page of the article in Finance Research Letters" onerror="this.remove()" src="assets/finance-research-letters-cover.jpg"/></div>
+<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#ca7b36"><b>Finance<br/>Research<br/>Letters</b><em>2026</em><img alt="Cover or first page of the article in Finance Research Letters" onerror="this.remove()" src="assets/finance-research-letters-cover.jpg.png"/></div>
 <div><h3><a href="https://doi.org/10.1016/j.frl.2026.110956" rel="noopener noreferrer" target="_blank">Media Interpretation, Investor Attention, and Volatility Escalation in Global Financial Markets</a></h3><p><em>Finance Research Letters</em> (2026) · Single-author article<br/><a href="https://doi.org/10.1016/j.frl.2026.110956" rel="noopener noreferrer" target="_blank">DOI: 10.1016/j.frl.2026.110956</a></p></div>
 </article>
 <article class="publication">
@@ -150,11 +152,11 @@
 <div><h3><a href="https://doi.org/10.1002/for.70141" rel="noopener noreferrer" target="_blank">Exploring the Nexus Between Sustainability Index and Central European Stock Markets Competitiveness: Evidence Through Time–Frequency Analysis and SHAP</a></h3><p><em>Journal of Forecasting</em>, 45(5), 2213–2237 (2026)<br/><a href="https://doi.org/10.1002/for.70141" rel="noopener noreferrer" target="_blank">DOI: 10.1002/for.70141</a></p></div>
 </article>
 <article class="publication">
-<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#11676e"><b>Journal of<br/>Business<br/>Economics<br/>&amp; Management</b><em>2023</em><img alt="Cover or first page of the Journal of Business Economics and Management article" onerror="this.remove()" src="assets/jbem-cover.jpg"/></div>
+<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#11676e"><b>Journal of<br/>Business<br/>Economics<br/>&amp; Management</b><em>2023</em><img alt="Cover or first page of the Journal of Business Economics and Management article" onerror="this.remove()" src="assets/jbem-cover.jpg.jpeg"/></div>
 <div><h3><a href="https://doi.org/10.3846/jbem.2023.18805" rel="noopener noreferrer" target="_blank">Critical Review of Text Mining and Sentiment Analysis for Stock Market Prediction</a></h3><p><em>Journal of Business Economics and Management</em>, 24(1), 177–198 (2023)<br/><a href="https://doi.org/10.3846/jbem.2023.18805" rel="noopener noreferrer" target="_blank">DOI: 10.3846/jbem.2023.18805</a></p></div>
 </article>
 <article class="publication">
-<div aria-label="Text preview; replace with an official journal cover if available" class="journal-preview" style="--journal-bg:#16475b"><b>Journal of<br/>Competitiveness</b><em>2023</em><img alt="Journal of Competitiveness cover" onerror="this.remove()" src="assets/journal-of-competitiveness-cover.jpg"/></div>
+<div aria-label="Custom typeset journal identifier; not an official publisher cover" class="journal-preview" style="--journal-bg:#16475b"><b>Journal of<br/>Competitiveness</b><em>2023</em><img alt="Typographic web preview for Journal of Competitiveness, volume 15, issue 1 (2023); not an official cover" decoding="async" loading="lazy" onerror="this.remove()" src="assets/journal-of-competitiveness-cover.jpg.jpg"/></div>
 <div><h3><a href="https://doi.org/10.7441/joc.2023.01.04" rel="noopener noreferrer" target="_blank">Hybrid Wavelet Adaptive Neuro-Fuzzy Tool Supporting Competitiveness and Efficiency of Predicting the Stock Markets of the Visegrad Four Countries</a></h3><p><em>Journal of Competitiveness</em>, 15(1), 56–72 (2023) · Single-author article<br/><a href="https://doi.org/10.7441/joc.2023.01.04" rel="noopener noreferrer" target="_blank">DOI: 10.7441/joc.2023.01.04</a></p></div>
 </article>
 </div>
@@ -171,7 +173,6 @@
 <div class="section-heading"><h2 id="stays-title">Research Stays &amp; International Collaboration</h2></div>
 <div class="stay-group">
 <div class="stay"><span class="year">2019 · Taiwan</span><h3>National Chengchi University</h3><p>Research visit under the supervision of Prof. Shu-Heng Chen.</p></div>
-
 <div class="stay"><span class="year">2022 · India</span><h3>Haldia Institute of Technology</h3><p>Erasmus+ research visit; continuing collaboration with Prof. Dipak Kumar Jana through joint research and publications.</p></div>
 <div class="stay"><span class="year">2023 · Netherlands &amp; Hungary</span><h3>Leiden University of Applied Sciences · Széchenyi István University</h3><p>Invited academic lectures and research exchange.</p></div>
 <div class="stay"><span class="year">2024 · Romania &amp; Austria</span><h3>POLITEHNICA Bucharest · FHWien der WKW</h3><p>Invited lectures under international academic mobility.</p></div>
