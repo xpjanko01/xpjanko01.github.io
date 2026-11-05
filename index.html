@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Academic website of Zuzana Janková, PhD, researcher in behavioural finance, investor sentiment and financial decision-making at Brno University of Technology." name="description"/>
+<meta content="#132c46" name="theme-color"/>
+<title>Zuzana Janková, PhD | Research in Behavioural Finance</title>
+<style>
+    :root {
+      --navy:#142d47; --navy-dark:#0d233a; --ink:#17283a;
+      --muted:#576574; --gold:#c8a064; --line:#dce2e7;
+      --paper:#ffffff; --soft:#f3f6f8; --blue:#315b7c;
+      --serif:Georgia,'Times New Roman',serif;
+      --sans:'Segoe UI',-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:13.5px;line-height:1.57}
+    a{color:var(--blue);text-decoration:none}
+    a:hover{text-decoration:underline}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    .container{width:min(1340px,calc(100% - 72px));margin-inline:auto}
+    .site-header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:30;box-shadow:0 2px 10px #0b1e2c13}
+    .nav-layout{display:flex;align-items:center;gap:35px;justify-content:space-between;min-height:64px}
+    .site-name{font-family:var(--serif);font-size:20px;font-weight:700;color:#fff;white-space:nowrap;letter-spacing:.1px}
+    .main-nav{display:flex;align-items:center;gap:23px;flex-wrap:nowrap}
+    .main-nav a{color:#ebf1f5;font-family:var(--serif);font-size:13.5px;white-space:nowrap;padding:22px 2px 19px;border-bottom:3px solid transparent}
+    .main-nav a:hover,.main-nav a.active{color:#fff;text-decoration:none;border-color:var(--gold)}
+    .hero{background:linear-gradient(125deg,#fff 5%,#f8f9f9 58%,#ecf1f4 100%);border-bottom:1px solid var(--line)}
+    .hero-inner{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(310px,.72fr);gap:62px;align-items:stretch;min-height:425px}
+    .hero-text{padding:49px 0 42px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+    .eyebrow{text-transform:uppercase;letter-spacing:.21em;font-size:11px;font-weight:750;color:#4b6276;margin:0 0 15px}
+    h1,h2,h3{font-family:var(--serif)}
+    h1{font-size:clamp(37px,3.6vw,53px);line-height:1.1;margin:0 0 14px;letter-spacing:-1.35px;color:var(--navy-dark)}
+    .hero-subtitle{font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.8vw,23px);line-height:1.3;margin:0 0 19px;color:#203b56}
+    .institution{font-size:13.5px;color:#385069;margin:0 0 21px}
+    .gold-line{width:65px;height:3px;background:var(--gold);margin:0 0 22px}
+    .hero-description{font-size:13.8px;line-height:1.7;max-width:710px;margin:0 0 25px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:11px}
+    .btn{padding:10px 19px;display:inline-flex;gap:14px;align-items:center;justify-content:center;border-radius:3px;font-size:13px;font-weight:650;transition:transform .15s;text-decoration:none!important}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-dark{background:var(--navy);color:#fff}
+    .btn-dark:hover{color:#fff;background:#254967}
+    .btn-outline{border:1px solid #9facb7;color:var(--navy);background:transparent}
+    .portrait-frame{position:relative;min-height:425px;align-self:stretch;overflow:hidden;background:linear-gradient(160deg,#e7ecef,#dce5ea)}
+    .portrait-frame:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 40%,#fff9 0,transparent 50%);z-index:1}
+    .portrait-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;z-index:2}
+    .portrait-fallback{height:100%;min-height:425px;display:flex;justify-content:center;flex-direction:column;align-items:center;gap:14px;color:#52677b;text-align:center}
+    .portrait-monogram{font:normal 86px var(--serif);color:#678094;opacity:.7;letter-spacing:-6px}
+    .portrait-fallback span:last-child{font-size:13px;max-width:250px;line-height:1.5}
+    main .main-feature{padding:31px 0 29px}
+    .overview-grid{display:grid;grid-template-columns:1.18fr .98fr .94fr;gap:0}
+    .overview-col{padding:0 35px;border-right:1px solid var(--line);min-width:0}
+    .overview-col:first-child{padding-left:0}.overview-col:last-child{border-right:0;padding-right:0}
+    .section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 0 19px}
+    .section-heading h2{color:var(--navy);font-size:clamp(22px,1.75vw,26px);line-height:1.17;letter-spacing:-.5px;margin:0}
+    .tiny-link{white-space:nowrap;font-size:11.5px;font-weight:600}
+    .publication-list{display:grid;gap:14px}
+    .publication{display:grid;grid-template-columns:70px minmax(0,1fr);gap:17px;align-items:start}
+    .journal-preview{width:70px;height:98px;position:relative;overflow:hidden;box-shadow:0 2px 7px #071d3015;border:1px solid #d3dce2;background:var(--journal-bg,#284c68);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:9px 7px}
+    .journal-preview:after{content:"";position:absolute;inset:auto -20px -24px;opacity:.15;height:72px;border-top:2px solid white;border-radius:50%;transform:rotate(-23deg);pointer-events:none}
+    .journal-preview b{font:700 11px/1.23 var(--sans);z-index:1;letter-spacing:-.15px}
+    .journal-preview em{font-size:8px;font-style:normal;opacity:.85;z-index:1}
+    .journal-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3}
+    .publication h3{font:700 14.2px/1.35 var(--serif);margin:0 0 3px}
+    .publication h3 a{color:var(--navy-dark)}
+    .publication p{font-size:12.4px;line-height:1.52;margin:0;color:var(--muted)}
+    .publication p a{font-weight:550}
+    .project-list{display:grid;gap:11px}
+    .project{border-left:3px solid #b4c4d0;background:#f5f7f9;padding:11px 13px}
+    .project h3{font:700 14.2px/1.32 var(--serif);margin:0 0 5px}
+    .project h3 a{color:var(--navy)}
+    .project p{margin:0;font-size:12.4px;line-height:1.54;color:var(--muted)}
+    .role{display:block;font-size:11.6px;font-weight:650;color:#375e78;margin-top:6px}
+    .project--highlight{border-left-color:#af8852;background:#f6f7f9}
+    .note{font-size:12px;line-height:1.65;color:#65727f;margin:11px 0 0}
+    .stay-group{display:grid;gap:10px}
+    .stay{padding-bottom:8px;border-bottom:1px solid var(--line)}
+    .stay:last-child{border-bottom:0}
+    .stay .year{color:#7d6a4f;font-weight:750;font-size:11.5px;letter-spacing:.06em}
+    .stay h3{font:700 14px/1.35 var(--serif);margin:2px 0 2px;color:var(--navy)}
+    .stay p{font-size:12.3px;line-height:1.55;margin:0;color:var(--muted)}
+
+
+
+    .contacts{border-top:1px solid #d4dce2;background:#eef3f6}
+    .contact-grid{min-height:85px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:22px 0}
+    .contacts a{font-size:12.5px;color:var(--navy);font-weight:600}
+    .contacts span{font-size:12.5px;color:#687987}
+    .footer-end{background:#f8fafb;padding:10px 0 18px;text-align:center;font-size:11px;color:#7c8994}
+    .print-only{display:none}
+    @media(max-width:1150px){.container{width:min(100% - 46px,1120px)}.overview-grid{grid-template-columns:1.1fr 1fr}.overview-col:nth-child(2){border-right:0;padding-right:0}.overview-col:nth-child(3){grid-column:1/-1;border-top:1px solid var(--line);border-right:0;margin-top:32px;padding:24px 0 0}.stay-group{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}.hero-inner{gap:40px}}
+    @media(max-width:800px){.nav-layout{display:block;padding-top:12px}.site-name{display:block;font-size:21px}.main-nav{overflow-x:auto;gap:18px;scrollbar-width:thin;margin-top:4px}.main-nav a{font-size:14px;padding:12px 1px}.hero-inner{display:flex;flex-direction:column-reverse;gap:0}.portrait-frame{align-self:stretch;min-height:320px;max-height:340px}.portrait-frame img{object-position:center 25%}.portrait-fallback{min-height:320px}.hero-text{padding:31px 0 38px}.hero-description{font-size:13.8px}.overview-grid{display:block}.overview-col,.overview-col:first-child,.overview-col:last-child,.overview-col:nth-child(2){padding:0;margin:0;border-right:0}.overview-col+.overview-col{margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}.stay-group{grid-template-columns:1fr}.contact-grid{justify-content:flex-start}.main-feature{padding-top:33px!important}}
+    @media(max-width:500px){.container{width:calc(100% - 32px)}h1{font-size:35px}.hero-subtitle{font-size:18px}.section-heading h2{font-size:22px}.publication{grid-template-columns:63px 1fr;gap:13px}.journal-preview{width:63px;height:89px}}
+    @media print{.site-header,.btn{display:none}.hero-inner{min-height:0}.hero-text{padding:20px 0}.portrait-frame{max-height:260px;min-height:260px}.overview-grid{display:grid;grid-template-columns:1fr 1fr 1fr}.overview-col{padding:0 15px}.print-only{display:block}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+<div class="container nav-layout">
+<a class="site-name" href="#home">Zuzana Janková</a>
+<nav aria-label="Main navigation" class="main-nav">
+<a class="active" href="#home">Home</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#projects">Projects</a>
+<a href="#stays">Research Stays</a>
+<a href="https://www.vut.cz/en/people/zuzana-jankova-163485" rel="noopener noreferrer" target="_blank" title="Institutional academic profile; replace with your CV PDF when available">CV / Profile</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main id="home">
+<section aria-labelledby="page-title" class="hero">
+<div class="container hero-inner">
+<div class="hero-text">
+<p class="eyebrow">Academic research · Financial economics</p>
+<h1 id="page-title">Zuzana Janková, PhD</h1>
+<p class="hero-subtitle">Researcher in Behavioural Finance<br/>and Financial Decision-Making</p>
+<p class="institution">Faculty of Business and Management<br/>Brno University of Technology · Czech Republic</p>
+<div aria-hidden="true" class="gold-line"></div>
+<p class="hero-description">My research examines how financial information is interpreted and how investor sentiment, information regimes and emerging technologies relate to financial market risk and decision-making under uncertainty.</p>
+<div class="hero-actions">
+<a class="btn btn-dark" href="#research">Explore research <span aria-hidden="true">→</span></a>
+<a class="btn btn-outline" href="https://www.vut.cz/en/people/zuzana-jankova-163485" rel="noopener noreferrer" target="_blank">Academic profile <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+<div aria-label="Professional portrait area" class="portrait-frame">
+<div aria-hidden="true" class="portrait-fallback" id="portrait-fallback">
+<div class="portrait-monogram">ZJ</div>
+<span>Professional portrait<br/>Upload <b>assets/portrait.jpg</b></span>
+</div>
+<img alt="Zuzana Janková — professional portrait" onerror="this.remove()" onload="document.getElementById('portrait-fallback').style.display='none'" src="assets/portrait.jpg"/>
+</div>
+</div>
+</section>
+<div class="container main-feature" id="research">
+<div class="overview-grid">
+<section aria-labelledby="pub-title" class="overview-col" id="publications">
+<div class="section-heading"><h2 id="pub-title">Selected Publications</h2><a class="tiny-link" href="https://www.vut.cz/en/people/zuzana-jankova-163485/publikacni-vysledky" rel="noopener noreferrer" target="_blank">Full publication list ↗</a></div>
+<div class="publication-list">
+<article class="publication">
+<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#ca7b36"><b>Finance<br/>Research<br/>Letters</b><em>2026</em><img alt="Cover or first page of the article in Finance Research Letters" onerror="this.remove()" src="assets/finance-research-letters-cover.jpg"/></div>
+<div><h3><a href="https://doi.org/10.1016/j.frl.2026.110956" rel="noopener noreferrer" target="_blank">Media Interpretation, Investor Attention, and Volatility Escalation in Global Financial Markets</a></h3><p><em>Finance Research Letters</em> (2026) · Single-author article<br/><a href="https://doi.org/10.1016/j.frl.2026.110956" rel="noopener noreferrer" target="_blank">DOI: 10.1016/j.frl.2026.110956</a></p></div>
+</article>
+<article class="publication">
+<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#164d7b"><b>Journal of<br/>Forecasting</b><em>2026</em><img alt="Cover or first page of the Journal of Forecasting article" onerror="this.remove()" src="assets/journal-of-forecasting-cover.jpg"/></div>
+<div><h3><a href="https://doi.org/10.1002/for.70141" rel="noopener noreferrer" target="_blank">Exploring the Nexus Between Sustainability Index and Central European Stock Markets Competitiveness: Evidence Through Time–Frequency Analysis and SHAP</a></h3><p><em>Journal of Forecasting</em>, 45(5), 2213–2237 (2026)<br/><a href="https://doi.org/10.1002/for.70141" rel="noopener noreferrer" target="_blank">DOI: 10.1002/for.70141</a></p></div>
+</article>
+<article class="publication">
+<div aria-label="Stylised publication preview, not an official journal cover" class="journal-preview" style="--journal-bg:#11676e"><b>Journal of<br/>Business<br/>Economics<br/>&amp; Management</b><em>2023</em><img alt="Cover or first page of the Journal of Business Economics and Management article" onerror="this.remove()" src="assets/jbem-cover.jpg"/></div>
+<div><h3><a href="https://doi.org/10.3846/jbem.2023.18805" rel="noopener noreferrer" target="_blank">Critical Review of Text Mining and Sentiment Analysis for Stock Market Prediction</a></h3><p><em>Journal of Business Economics and Management</em>, 24(1), 177–198 (2023)<br/><a href="https://doi.org/10.3846/jbem.2023.18805" rel="noopener noreferrer" target="_blank">DOI: 10.3846/jbem.2023.18805</a></p></div>
+</article>
+<article class="publication">
+<div aria-label="Text preview; replace with an official journal cover if available" class="journal-preview" style="--journal-bg:#16475b"><b>Journal of<br/>Competitiveness</b><em>2023</em><img alt="Journal of Competitiveness cover" onerror="this.remove()" src="assets/journal-of-competitiveness-cover.jpg"/></div>
+<div><h3><a href="https://doi.org/10.7441/joc.2023.01.04" rel="noopener noreferrer" target="_blank">Hybrid Wavelet Adaptive Neuro-Fuzzy Tool Supporting Competitiveness and Efficiency of Predicting the Stock Markets of the Visegrad Four Countries</a></h3><p><em>Journal of Competitiveness</em>, 15(1), 56–72 (2023) · Single-author article<br/><a href="https://doi.org/10.7441/joc.2023.01.04" rel="noopener noreferrer" target="_blank">DOI: 10.7441/joc.2023.01.04</a></p></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="proj-title" class="overview-col" id="projects">
+<div class="section-heading"><h2 id="proj-title">Research Projects</h2><a class="tiny-link" href="https://www.vut.cz/en/people/zuzana-jankova-163485/projekty" rel="noopener noreferrer" target="_blank">Institutional record ↗</a></div>
+<div class="project-list">
+<article class="project project--highlight"><h3>Enhancing Financial Digital Literacy in the V4: Building Digital Competencies for Financial Security</h3><p>International Visegrad Fund · February 2026 – July 2027</p><span class="role">Co-investigator · Coordinator for the Czech partner</span></article>
+<article class="project"><h3>Advanced Decision-Making Models for Risk Management in the Digital Economy</h3><p>Austria–Czech bilateral research cooperation · 2025 · Supported by the Czech Ministry of Education, Youth and Sports</p><span class="role">Research team member</span></article>
+<article class="project"><h3>Erasmus+ KA171 – International Credit Mobility</h3><p>Academic mobility and cooperation with partner institutions in Georgia.</p><span class="role">Participant · International academic cooperation</span></article></div>
+<p class="note">Further experience: six internal research projects at Brno University of Technology, including two junior projects led as principal investigator.</p>
+</section>
+<section aria-labelledby="stays-title" class="overview-col" id="stays">
+<div class="section-heading"><h2 id="stays-title">Research Stays &amp; International Collaboration</h2></div>
+<div class="stay-group">
+<div class="stay"><span class="year">2019 · Taiwan</span><h3>National Chengchi University</h3><p>Research visit under the supervision of Prof. Shu-Heng Chen.</p></div>
+
+<div class="stay"><span class="year">2022 · India</span><h3>Haldia Institute of Technology</h3><p>Erasmus+ research visit; continuing collaboration with Prof. Dipak Kumar Jana through joint research and publications.</p></div>
+<div class="stay"><span class="year">2023 · Netherlands &amp; Hungary</span><h3>Leiden University of Applied Sciences · Széchenyi István University</h3><p>Invited academic lectures and research exchange.</p></div>
+<div class="stay"><span class="year">2024 · Romania &amp; Austria</span><h3>POLITEHNICA Bucharest · FHWien der WKW</h3><p>Invited lectures under international academic mobility.</p></div>
+<div class="stay"><span class="year">2025 · Georgia &amp; Portugal</span><h3>International Black Sea University · Iscte – Instituto Universitário de Lisboa</h3><p>Invited academic lectures and ongoing international cooperation.</p></div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="contacts" id="contact"><div class="container contact-grid">
+<a href="mailto:Zuzana.Jankova@vutbr.cz">✉ Zuzana.Jankova@vutbr.cz</a>
+<a href="https://www.vut.cz/en/people/zuzana-jankova-163485" rel="noopener noreferrer" target="_blank">Brno University of Technology ↗</a>
+<a href="https://orcid.org/0000-0003-1798-5275" rel="noopener noreferrer" target="_blank">ORCID: 0000-0003-1798-5275 ↗</a>
+<a href="https://www.vut.cz/en/people/zuzana-jankova-163485/publikacni-vysledky" rel="noopener noreferrer" target="_blank">Publication database ↗</a>
+<span>Brno · Czech Republic</span>
+</div></footer>
+<div class="footer-end"><div class="container">© <span id="year">2026</span> Zuzana Janková · Personal academic website</div></div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
